@@ -1,0 +1,22 @@
+body {
+
+}
+
+blockquote p {
+    padding: 15px;
+    background: rgb(172, 170, 170);
+    display: block;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+span {
+    font-style: italic;
+    font-size: 20px;
+    color :red;
+}
