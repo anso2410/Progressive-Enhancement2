@@ -54,7 +54,7 @@ blockquote {
   margin-right: auto;
 }
 
-blockquote p {
+ blockquote p {
   padding: 15px;
   background: rgb(172, 170, 170);
   display: inline-block;
@@ -75,9 +75,42 @@ ul {
 
   font-family: "Bree Serif", serif;
 }
-li {
+ul {
+  list-style-type: lower-greek;
+  padding: 0;
+  margin: 0;
   display: inline;
+  list-style-position:inherit;
 }
+ul li {
+  padding: 10px;
+  margin-left: 80px;
+
+}
+li {
+  margin-top: 20px;
+}
+ li:nth-child(1)::after {
+  content:  url('pouce2.ico');
+  padding-left: 30px;
+  margin-top: 20px
+  
+  ;
+
+  
+}
+li:nth-child(2)::after {
+  content: url('pouce3.ico');
+  padding-top: 30px;
+ 
+}
+li:nth-child(3)::after {
+  content:url("chat.ico")
+}
+
+
+
+
 
 span {
   text-transform: uppercase;
@@ -115,8 +148,14 @@ q {
   margin-left: 25px;
   margin-right: 25px;
   font-family: "Averia Serif Libre", cursive;
+  
   text-align: justify;
 }
+p:nth-child(5){
+ 
+  font-style: oblique;
+}
+
 
 q.citation {
   max-width: 50%;
