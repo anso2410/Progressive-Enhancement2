@@ -6,18 +6,25 @@ body {
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #333;
+  background-image: url("fleuri.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }
 header {
   height: auto;
   border: 3px solid gray;
-  
+
   border-radius: 20px;
   margin-left: 1.5em;
   margin-right: 1.5em;
-  
+  margin-top: 20px;
+  background-color: pink;
+}
+header blockquote p:nth-child(2) {
+  background: rgb(235, 235, 148);
 }
 h1 {
-  
   text-transform: uppercase;
 
   margin: 0;
@@ -28,21 +35,23 @@ h1 {
 }
 h2 {
   margin-left: 80px;
+  padding-top: 20px;
 }
 h1,
-h2, h3, caption {
+h2,
+h3,
+caption {
   font-family: "Bree Serif", serif;
 }
-h1, h3 {
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
-figure {
-}
+
 blockquote {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 blockquote p {
@@ -55,11 +64,10 @@ blockquote p {
   margin-left: auto;
   margin-right: auto;
   border: solid #333;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 }
 
 ul {
-  
   margin: 0;
   padding: 0;
   margin-left: 80px;
@@ -72,12 +80,12 @@ li {
 }
 
 span {
-  font-style: italic;
+  text-transform: uppercase;
   font-size: 20px;
   color: red;
 }
 table {
-    margin: auto;
+  margin: auto;
 }
 table,
 th,
@@ -89,19 +97,54 @@ td {
   padding: 5px;
   text-align: center;
 }
- caption {
-    font-weight: bold;
+table.colorline :nth-child(odd) td {
+  background-color: #fff;
 }
+table.colorline :nth-child(even) td {
+  background-color: gray;
+}
+
 caption {
+  font-weight: bold;
   margin-bottom: 13px;
 }
-p {
+
+p,
+q {
   line-height: 32px;
   margin-left: 25px;
   margin-right: 25px;
-  font-family: 'Averia Serif Libre', cursive; ;
+  font-family: "Averia Serif Libre", cursive;
   text-align: justify;
 }
+
+q.citation {
+  max-width: 50%;
+  border-left: solid 3px #333;
+  display: block;
+  padding-right: 30px;
+  text-align: center;
+  margin: 80px auto;
+}
+q {
+  background: rgb(177, 176, 176);
+  font-style: italic;
+  padding-left: 30px;
+}
+q.villageois {
+  border-left: solid 3px red;
+  display: block;
+  max-width: 50%;
+  margin: 80px auto;
+  padding-right: 30px;
+}
+.paysan {
+  width: 30%;
+}
+.bien {
+  color: rgb(7, 121, 7);
+}
+
 img {
   display: block;
   width: 30%;
@@ -109,8 +152,17 @@ img {
   margin-right: auto;
   border: 8px solid gray;
   border-radius: 50%;
- 
+  margin-bottom: 7px;
+  margin-top: 5px;
 }
-.paysan {
-  width: 30%;
+
+a {
+  text-decoration: none;
+  padding: 0;
 }
+a:hover {
+  color: rgb(170, 43, 170);
+  cursor: zoom-out;
+}
+
+
