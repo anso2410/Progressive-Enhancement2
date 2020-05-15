@@ -6,7 +6,7 @@ body {
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #333;
-  background-image: url("fleuri.jpg");
+  background-image: url("/img/fleuri.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -91,7 +91,7 @@ li {
   margin-top: 20px;
 }
  li:nth-child(1)::after {
-  content:  url('pouce2.ico');
+  content:  url('/img/pouce2.ico');
   padding-left: 30px;
   margin-top: 20px
   
@@ -100,12 +100,12 @@ li {
   
 }
 li:nth-child(2)::after {
-  content: url('pouce3.ico');
+  content: url('/img/pouce3.ico');
   padding-top: 30px;
  
 }
 li:nth-child(3)::after {
-  content:url("chat.ico")
+  content:url("/img/chat.ico")
 }
 
 
