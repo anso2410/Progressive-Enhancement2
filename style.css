@@ -125,7 +125,7 @@ th,
 tr,
 td {
   width: 500px;
-  border: 5px solid gray;
+  border: 5px solid black;
   
   border-collapse: collapse;
   padding: 5px;
@@ -134,11 +134,12 @@ td {
 td {
   font-family: 'Balsamiq Sans', cursive;
 }
-table.colorline :nth-child(odd) td {
-  background-color: #fff;
+
+tr:nth-child(odd) {
+  background: wheat;
 }
-table.colorline :nth-child(even) td {
-  background-color: gray;
+tr:nth-child(even) {
+  background: gray;
 }
 
 caption {
