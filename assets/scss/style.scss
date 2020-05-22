@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
 
+$color-txt- : #333;
+$color-bordure
 html {
     font-size: (12 / 16) * 1em;
 }
-
-
 body {
     height: 100%vh;
     max-width: 90%;
-    margin: 0 auto;
     padding: 0;
     font-size: 20px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -15,7 +15,7 @@ body {
     background-image: url("img/fleuri.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    
     background-position: bottom right; 
     background-attachment: fixed;
-  }
+}
+@import 'header.scss';
